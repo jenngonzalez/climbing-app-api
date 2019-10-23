@@ -1,5 +1,4 @@
 const config = require('../config')
-const rp = require('request-promise')
 const request = require('request')
 
 

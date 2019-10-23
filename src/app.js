@@ -5,6 +5,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV, CLIENT_ORIGIN } = require('./config')
 const getWeather = require('./weather/weather-api')
+const getClimbs = require('./climbs/climbs-api')
 
 const app = express()
 
@@ -31,10 +32,7 @@ app.get('/', (req, res) => {
 //   });
 
 app.get('/api/weather', getWeather)
-
-app.get('/api/climbs', (req, res) => {
-
-})
+app.get('/api/climbs', getClimbs)
 
 app.use(function errorHandler(error, req, res, next) {
     let response

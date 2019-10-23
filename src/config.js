@@ -1,5 +1,6 @@
 module.exports = {
     PORT: process.env.PORT || 8000,
     NODE_ENV: process.env.NODE_ENV || 'development',
-    DARK_SKY_URL: 'https://api.darksky.net/forecast/'
+    DARK_SKY_URL: 'https://api.darksky.net/forecast/',
+    MOUNTAIN_PROJECT_URL: 'https://www.mountainproject.com/data/get-routes-for-lat-lon'
 }
