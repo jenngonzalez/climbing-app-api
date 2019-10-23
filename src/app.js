@@ -4,6 +4,7 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV, CLIENT_ORIGIN } = require('./config')
+const getWeather = require('./weather/weather-api')
 
 const app = express()
 
@@ -25,9 +26,15 @@ app.get('/', (req, res) => {
     res.send('Climbing App Server Running!')
 })
 
-app.get('/api/*', (req, res) => {
-    res.json({ok: true});
-  });
+// app.get('/api/*', (req, res) => {
+//     res.json({ok: true});
+//   });
+
+app.get('/api/weather', getWeather)
+
+app.get('/api/climbs', (req, res) => {
+
+})
 
 app.use(function errorHandler(error, req, res, next) {
     let response
