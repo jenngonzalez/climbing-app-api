@@ -3,7 +3,7 @@ const request = require('request')
 
 
 
-const getClimbs = (req, res) => {
+const getNearbyClimbs = (req, res) => {
     const climbsUrl = config.MOUNTAIN_PROJECT_URL
     const climbsKey = process.env.MOUNTAIN_PROJECT_KEY
     const lat = req.query.lat
@@ -25,4 +25,4 @@ const getClimbs = (req, res) => {
 }
 
 
-module.exports = getClimbs
+module.exports = getNearbyClimbs
