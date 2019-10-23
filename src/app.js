@@ -4,8 +4,11 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV, CLIENT_ORIGIN } = require('./config')
+const usersRouter = require('./users/users-router')
+const authRouter = require('./auth/auth-router')
+const climbsRouter = require('./climbs/climbs-router')
 const getWeather = require('./weather/weather-api')
-const getClimbs = require('./nearbyClimbs/nearby-climbs-api')
+const getNearbyClimbs = require('./nearbyClimbs/nearby-climbs-api')
 
 const app = express()
 
@@ -23,14 +26,13 @@ app.use(
 
 app.use('/api/users', usersRouter)
 app.use('/api/auth', authRouter)
-app.use('/api/climbs', climbsRouter)
-
+// app.use('/api/climbs', climbsRouter)
 
 app.get('/api/weather', getWeather)
 app.get('/api/nearbyClimbs', getNearbyClimbs)
 
 app.get('/', (req, res) => {
-    res.send('Climbing App Server Running!')
+    res.send('Ascend Server Running!')
 })
 
 app.use(function errorHandler(error, req, res, next) {

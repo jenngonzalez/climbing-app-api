@@ -3,13 +3,8 @@ const jwt = require('jsonwebtoken')
 const config = require('../config')
 
 const AuthService = {
-    getUserWithUserName(db, user_name) {
-        return db('greenhouse_users')
-            .where({ user_name })
-            .first()
-    },
     getUserWithEmail(db, email) {
-        return db('greenhouse_users')
+        return db('ascend_users')
             .where({ email })
             .first()
     },
