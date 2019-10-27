@@ -26,7 +26,7 @@ app.use(
 
 app.use('/api/users', usersRouter)
 app.use('/api/auth', authRouter)
-// app.use('/api/climbs', climbsRouter)
+app.use('/api/climbs', climbsRouter)
 
 app.get('/api/weather', getWeather)
 app.get('/api/nearbyClimbs', getNearbyClimbs)
