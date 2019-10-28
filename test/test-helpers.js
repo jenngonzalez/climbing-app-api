@@ -26,7 +26,7 @@ function makeClimbsArray(users) {
     return [
         {
             id: 1,
-            date: new Date('2029-01-22T16:28:32.615Z'),
+            date: '2029-01-22T16:28:32.615Z',
             location: 'test location 1',
             climb_name: 'test name 1',
             climb_grade: 3,
@@ -36,7 +36,7 @@ function makeClimbsArray(users) {
         },
         {
             id: 2,
-            date: new Date('2029-01-22T16:28:32.615Z'),
+            date: '2029-01-22T16:28:32.615Z',
             location: 'test location 2',
             climb_name: 'test name 2',
             climb_grade: 4,
@@ -46,7 +46,7 @@ function makeClimbsArray(users) {
         },
         {
             id: 3,
-            date: new Date('2029-01-22T16:28:32.615Z'),
+            date: '2029-01-22T16:28:32.615Z',
             location: 'test location 3',
             climb_name: 'test name 3',
             climb_grade: 5,

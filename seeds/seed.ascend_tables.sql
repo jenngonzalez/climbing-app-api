@@ -7,9 +7,9 @@ TRUNCATE
 
 INSERT INTO ascend_users (email, password)
     VALUES
-        ('user1@email.com', 'password1'),
-        ('user2@email.com', 'password2'),
-        ('user3@email.com', 'password3');
+        ('user1@email.com', '$2a$12$fgEWnfm780lcAHmXZwcvG.165fP/MDc/3Hf0UlPMQ0p0jW45BB572'),
+        ('user2@email.com', '$2a$12$sF30eHm10UhpiX9JoImIVuDshREmkcMJzPsusws0EGLhtRwx7M0Z.'),
+        ('user3@email.com', '$2a$12$MoFQ.TKpDd.7RYLT2EO98ebTOsvb.5uC6qy38kwiWdiV3SORf8jVi');
 
 INSERT INTO ascend_climbs (
     date,
