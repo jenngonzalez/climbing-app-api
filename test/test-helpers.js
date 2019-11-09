@@ -29,7 +29,7 @@ function makeClimbsArray(users) {
             date: '2029-01-22T16:28:32.615Z',
             location: 'test location 1',
             climb_name: 'test name 1',
-            climb_grade: 3,
+            climb_grade: 'V3',
             user_status: 'send',
             image: 'http://www.jpg.com',
             user_id: users[2].id
@@ -39,7 +39,7 @@ function makeClimbsArray(users) {
             date: '2029-01-22T16:28:32.615Z',
             location: 'test location 2',
             climb_name: 'test name 2',
-            climb_grade: 4,
+            climb_grade: 'V4',
             user_status: 'send',
             image: 'http://www.jpg.com',
             user_id: users[1].id
@@ -49,7 +49,7 @@ function makeClimbsArray(users) {
             date: '2029-01-22T16:28:32.615Z',
             location: 'test location 3',
             climb_name: 'test name 3',
-            climb_grade: 5,
+            climb_grade: 'V5',
             user_status: 'send',
             image: 'http://www.jpg.com',
             user_id: users[0].id
