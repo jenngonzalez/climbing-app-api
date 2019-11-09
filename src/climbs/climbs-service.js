@@ -83,7 +83,7 @@ const ClimbsService = {
             date: new Date(climb.date),
             location: xss(climb.location),
             climb_name: xss(climb.climb_name),
-            climb_grade: climb.climb_grade,
+            climb_grade: xss(climb.climb_grade),
             user_status: xss(climb.user_status),
             image: xss(climb.image),
             user_id: climb.user_id,

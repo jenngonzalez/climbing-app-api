@@ -3,7 +3,7 @@ CREATE TABLE ascend_climbs (
     date TIMESTAMP DEFAULT now(),
     location TEXT NOT NULL,
     climb_name TEXT NOT NULL,
-    climb_grade INTEGER NOT NULL,
+    climb_grade TEXT NOT NULL,
     user_status TEXT NOT NULL,
     image TEXT,
     user_id INTEGER

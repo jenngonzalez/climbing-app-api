@@ -57,7 +57,7 @@ describe('Climbs Endpoints', function() {
             const newClimb = {
                 location: 'test location',
                 climb_name: 'test climb name',
-                climb_grade: 3,
+                climb_grade: 'V3',
                 user_status: 'test user status'
             }
             return supertest(app)
@@ -96,7 +96,7 @@ describe('Climbs Endpoints', function() {
             const postAttemptBody = {
                 location: 'testLocation',
                 climb_name: 'testClimbName',
-                climb_grade: 2,
+                climb_grade: 'V2',
                 user_status: 'testUserStatus'
             }
 
@@ -149,7 +149,7 @@ describe('Climbs Endpoints', function() {
         beforeEach('insert users', () => 
             helpers.seedUsers(db, testUsers)
         )
-        beforeEach('insert plants', () => 
+        beforeEach('insert climbs', () => 
             helpers.seedClimbs(db, testUsers, testClimbs)
         )
 
