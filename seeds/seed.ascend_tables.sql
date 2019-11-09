@@ -24,7 +24,7 @@ INSERT INTO ascend_climbs (
         '2019-10-16 12:00:00',
         'Gold Bar Boulders',
         'Midnight Lichen',
-        4,
+        'V4',
         'Project',
         'http://url.com/img.jpg',
         3
@@ -33,7 +33,7 @@ INSERT INTO ascend_climbs (
         '2019-10-17 12:00:00',
         'Index',
         'Space Cadets',
-        2,
+        'V2',
         'Flash',
         'http://url.com/img.jpg',
         2
@@ -42,7 +42,7 @@ INSERT INTO ascend_climbs (
         '2019-10-18 12:00:00',
         'Gold Bar Boulders',
         'Beam Me Up',
-        2,
+        'V2',
         'Send',
         'http://url.com/img.jpg',
         1
