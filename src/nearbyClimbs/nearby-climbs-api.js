@@ -11,7 +11,7 @@ const getNearbyClimbs = (req, res) => {
     // const lat=47.6062
     // const lng=-122.3321
 
-    const url = `${climbsUrl}?lat=${lat}&lon=${lng}&maxDistance=50&minDiff=V0&maxDiff=V15&key=${climbsKey}`
+    const url = `${climbsUrl}?lat=${lat}&lon=${lng}&maxResults=100&maxDistance=200&minDiff=V0&maxDiff=V15&key=${climbsKey}`
     
     console.log(url)
 
