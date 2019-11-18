@@ -32,16 +32,9 @@ describe('Climbs Endpoints', function() {
             it(`returns all climbs matching the user's email`, () => {
                 userEmail = testUsers[0].email
                 expectedClimb = [testClimbs[2]]
-                // console.log('expectedClimb', expectedClimb)
-                console.log('userEmail', userEmail)
                 return supertest(app)
                     .get(`/api/climbs/${userEmail}`)
                     .set('Authorization', helpers.makeAuthHeader(testUsers[0]))
-                    // .expect(res => {
-                    //     // expect(res.body.user.email).to.eql(userEmail)
-                    //     // expect(res.user.id).to.eql(testUsers[0].id)
-
-                    // })
                     .expect(expectedClimb)
             })
         })
@@ -125,12 +118,9 @@ describe('Climbs Endpoints', function() {
         context(`Given there are climbs in the database associated with that user`, () => {
             it(`responds with 204 and removes the specified climb`, () => {
                 const testUser = testUsers[0].email
-                console.log('testUsers', testUsers)
-                console.log('testClimbs', testClimbs)
                 const idToRemove = 1
                 const userClimbs = testClimbs.filter(climb => climb.user_id === testUsers[0].id)
                 const expectedClimbs = userClimbs.filter(climb => climb.id !== idToRemove)
-                console.log('expectedClimbs', expectedClimbs)
                 return supertest(app)
                     .delete(`/api/climbs/${testUser}/${idToRemove}`)
                     .set('Authorization', helpers.makeAuthHeader(testUsers[0]))
