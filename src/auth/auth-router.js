@@ -5,7 +5,8 @@ const authRouter = express.Router()
 const jsonBodyParser = express.json()
 
 authRouter
-    .post('/', jsonBodyParser, (req, res, next) => {
+    .route('/')
+    .post(jsonBodyParser, (req, res, next) => {
         const { email, password } = req.body
         const loginUser = { email, password }
 
@@ -40,6 +41,17 @@ authRouter
         })
         .catch(next)
     })
+
+// TO DO: implement refresh token
+// authRouter
+//     .route('/refresh')
+//     .post(requireAuth, (req, res) => {
+//         const sub = req.user.user_name
+//         const payload = { user_id: req.user.id }
+//         res.send({
+//           authToken: AuthService.createJwt(sub, payload),
+//         })
+//     })
 
 
 module.exports = authRouter
