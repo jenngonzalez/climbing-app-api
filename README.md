@@ -1,26 +1,17 @@
-# Express Boilerplate!
+# ASCEND SERVER
 
-This is a boilerplate project used for starting new projects!
+## Back end for Ascend App
+* Provides methods for signup/login, getting user climbs, and adding/deleting climbs.
+* Utilizes the [Dark Sky API](https://darksky.net/dev) to access weather data.
+* Utilizes the [Mountain Project API](https://www.mountainproject.com/data) to access a database of climbing locations and routes.
 
-## Set up
+## Tech Used:
+Node.js, Express, PostgreSQL
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+## Build Status / In Development
+* Add Patch method to climbs-router so that the user can edit details of their saved climb
+* Implement a method to refresh the user's JWT
+* More robust testing
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
-
-## Scripts
-
-Start the application `npm start`
-
-Start nodemon for the application `npm run dev`
-
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+## Link to App
+* [Ascend App](https://ascend.now.sh/)
